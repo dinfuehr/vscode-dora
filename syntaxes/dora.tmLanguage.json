@@ -17,7 +17,7 @@
         },
         {
             "name": "constant.other.dora",
-            "match": "\\b(true|false|nil)\\b"
+            "match": "\\b(true|false)\\b"
         },
         {
             "name": "string.quoted.double.dora",
@@ -43,11 +43,15 @@
         },
         {
             "name": "keyword.control.dora",
-            "match": "\\b(if|else|while|for|in|return|continue|break)\\b"
+            "match": "\\b(if|else|while|for|in|return|continue|break|match)\\b"
         },
         {
             "name": "keyword.other.dora",
-            "match": "\\b(class|struct|trait|enum|impl|module|let|var|self)\\b"
+            "match": "\\b(class|struct|annotation|trait|package|annotation|enum|impl|mod)\\b"
+        },
+        {
+            "name": "keyword.other.dora",
+            "match": "\\b(let|var|self|use|mut)\\b"
         },
         {
             "name": "keyword.other.dora",
@@ -55,7 +59,7 @@
         },
         {
             "name": "storage.type.primitive.dora",
-            "match": "\\b(Bool|Byte|Char|Int|Long|Float|Double|String|Array)\\b"
+            "match": "\\b(Bool|UInt8|Char|Int32|Int64|Float32|Float64|String|Array|Vec)\\b"
         },
         {
             "name": "constant.numeric.integer.decimal.dora",
@@ -86,11 +90,11 @@
             "match": "\\b[0-9][0-9_]*(\\.[0-9][0-9_]*)?([eE][+-]?[0-9_]+)?(D|F)\\b"
         },
         {
-            "begin": "\\b(fun)\\s+([A-Za-z][A-Za-z0-9_]*|_[A-Za-z0-9_]+)",
+            "begin": "\\b(fn)\\s+([A-Za-z][A-Za-z0-9_]*|_[A-Za-z0-9_]+)",
             "end": "\\(",
             "beginCaptures": {
                 "1": {
-                    "name": "keyword.other.fun.dora"
+                    "name": "keyword.other.fn.dora"
                 },
                 "2": {
                     "name": "entity.name.function.dora"
