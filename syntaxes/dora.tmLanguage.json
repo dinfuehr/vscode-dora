@@ -51,7 +51,7 @@
         },
         {
             "name": "keyword.other.dora",
-            "match": "\\b(let|var|self|use|mut)\\b"
+            "match": "\\b(let|var|const|self|use|mut|is|as)\\b"
         },
         {
             "name": "keyword.other.dora",
